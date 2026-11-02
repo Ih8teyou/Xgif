@@ -1,0 +1,10 @@
+.xgif-wrap { display: flex; align-items: center; justify-content: center; margin-left: 4px; }
+.xgif-btn {
+  all: unset; box-sizing: border-box; cursor: pointer;
+  font: 700 11px/1 system-ui, sans-serif; letter-spacing: .5px;
+  color: rgb(113, 118, 123); border: 1.5px solid currentColor; border-radius: 6px;
+  padding: 4px 6px; min-width: 38px; text-align: center; transition: color .15s, background .15s;
+}
+.xgif-btn:hover { color: rgb(29, 155, 240); background: rgba(29, 155, 240, .1); }
+.xgif-btn[disabled] { cursor: progress; color: rgb(29, 155, 240); }
+.xgif-btn.xgif-err { color: rgb(244, 33, 46); }

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Xgif",
+  "version": "1.0.0",
+  "description": "Adds a GIF button to posts with a video on X (Twitter). Converts locally in your browser. No servers/tracking.",
+  "permissions": [],
+  "icons": {
+    "16": "Icons/icon16.png",
+    "32": "Icons/icon32.png",
+    "48": "Icons/icon48.png",
+    "128": "Icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Xgif",
+    "default_icon": {
+      "16": "Icons/icon16.png",
+      "32": "Icons/icon32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["lib/gifenc.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
