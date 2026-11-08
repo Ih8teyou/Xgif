@@ -3,10 +3,10 @@ Adds a small **GIF** button to the action bar of any post with a video on x.com 
 Click it and a real `.gif` is saved to your Downloads folder.
 
 ## Install (Brave / Chrome / any Chromium browser)
-1. Keep this folder somewhere permanent.
+1. download the .zip folder somewhere permanent.
 2. Open `brave://extensions` and turn on **Developer mode**.
-3. Click **Load unpacked** and choose this folder (the one containing `manifest.json`).
-4. Reload x.com.
+4. Click **Load unpacked** and choose the folder containing `manifest.json`.
+5. Reload x.com.
 
 ## How it works
 - **GIF posts** (direct MP4 on video.twimg.com): the file is fetched, decoded in a hidden `<video>`, and frames are encoded locally.
